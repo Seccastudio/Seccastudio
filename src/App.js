@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // Import CSS utama
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
+import Header from './components/Header'; // Header Component
+import HeroSection from './components/HeroSection'; // Hero Section
+import AboutSection from './components/AboutSection'; // About Section
+import GamesSection from './components/GamesSection'; // Games Section
+import ContactSection from './components/ContactSection'; // Contact Section
+import Footer from './components/Footer'; // Footer
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <HeroSection />
+      <AboutSection />
+      <GamesSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
